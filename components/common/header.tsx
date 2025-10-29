@@ -13,7 +13,7 @@ const NAV_LINKS = [
 ];
 export default function Header() {
   return (
-    <header className="flex justify-between p-4">
+    <header className="fixed flex justify-between p-4 font-header z-50 w-full">
       <Link href="/">
         <Image
           className="w-[360px] h-[81px] hover:cursor-pointer"
@@ -21,7 +21,7 @@ export default function Header() {
           alt="logo"
         />
       </Link>
-      <ul className="flex items-center space-x-4">
+      <ul className="flex items-center space-x-8 text-white text-shadow-page">
         {NAV_LINKS.map(({ title, href }, index) =>
           href ? (
             <Link key={title + index} {...{ href }}>

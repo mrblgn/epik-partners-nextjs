@@ -17,6 +17,7 @@ export default function Header() {
       <Link href="/">
         <Image
           className="w-[360px] h-[81px] hover:cursor-pointer"
+          loading="eager"
           src={Logo}
           alt="logo"
         />

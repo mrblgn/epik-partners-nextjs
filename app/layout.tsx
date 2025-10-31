@@ -26,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ralewaySans.variable} ${libreSerif.variable} antialiased font-body`}>
+      <body>
         <Header />
-        <main className="flex min-h-screen w-full max-w-3xl">{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </body>
     </html>
